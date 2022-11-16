@@ -6,9 +6,12 @@
         <entry key="app/src/main/res/drawable/background.xml" value="0.1465" />
         <entry key="app/src/main/res/drawable/ic_add_photo.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable/ic_document_scanner.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_switch_camera.xml" value="0.153" />
+        <entry key="app/src/main/res/layout/activity_face_detection.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2390625" />
         <entry key="app/src/main/res/layout/activity_speaker.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_translate.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/layout/spinner_item.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

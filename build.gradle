@@ -5,6 +5,15 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
 }
 
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // WAS: FAIL_ON_PROJECT_REPOS
+//    repositories {
+//        google()
+//        mavenCentral()
+//        maven {url 'https://mvnrepository.com'} // ADDED THIS
+//    }
+//}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
