@@ -26,9 +26,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Speaker"/>
-        <activity android:name=".Translate"/>
-        <activity android:name=".FaceDetection"/>
+        <activity android:name=".SpeakerActivity"/>
+        <activity android:name=".TranslateActivity"/>
+        <activity android:name=".FaceDetectionActivity"/>
+        <activity android:name=".ImageLabelingActivity"/>
+        <activity android:name=".BarcodeScanningActivity"/>
     </application>
 
 </manifest>

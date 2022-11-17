@@ -9,7 +9,7 @@ import com.example.newimagetotext.facedetector.LensFacing
 import com.otaliastudios.cameraview.controls.Facing
 import kotlinx.android.synthetic.main.activity_face_detection.*
 
-class FaceDetection: AppCompatActivity() {
+class FaceDetectionActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

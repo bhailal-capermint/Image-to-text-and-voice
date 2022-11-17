@@ -100,17 +100,27 @@ class MainActivityTwo: AppCompatActivity() {
         }
     }
     fun goToTranslateBtn(view: View?) {
-        val intent = Intent(this@MainActivityTwo, Translate::class.java)
+        val intent = Intent(this@MainActivityTwo, TranslateActivity::class.java)
         startActivity(intent)
     }
 
     fun goToSpeakerBtn(view: View?) {
-        val intent = Intent(this@MainActivityTwo, Speaker::class.java)
+        val intent = Intent(this@MainActivityTwo, SpeakerActivity::class.java)
         startActivity(intent)
     }
 
     fun goToFaceDetectBtn(view:View?){
-        val intent = Intent(this@MainActivityTwo, FaceDetection::class.java)
+        val intent = Intent(this@MainActivityTwo, FaceDetectionActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun goToImageLabeling(view:View?){
+        val intent = Intent(this@MainActivityTwo, ImageLabelingActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun goToBarcodeScanning(view: View?){
+        val intent = Intent(this@MainActivityTwo, BarcodeScanningActivity::class.java)
         startActivity(intent)
     }
 

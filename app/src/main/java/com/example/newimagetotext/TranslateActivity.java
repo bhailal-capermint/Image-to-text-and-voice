@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -30,7 +29,7 @@ import com.google.mlkit.nl.translate.TranslatorOptions;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class Translate extends AppCompatActivity {
+public class TranslateActivity extends AppCompatActivity {
 
 
     private Spinner fromSpinner, toSpinner;
@@ -106,7 +105,7 @@ public class Translate extends AppCompatActivity {
                     startActivityForResult(intent, REQUEST_PERMISSION_CODE);
                 } catch (Exception e) {
                     e.printStackTrace();
-                    Toast.makeText(Translate.this,""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TranslateActivity.this,""+e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -117,11 +116,11 @@ public class Translate extends AppCompatActivity {
                 translateTV.setVisibility(View.VISIBLE);
                 translateTV.setText("");
                 if(sourceText.getText().toString().isEmpty()) {
-                    Toast.makeText(Translate.this, "Please enter text to translate", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TranslateActivity.this, "Please enter text to translate", Toast.LENGTH_SHORT).show();
                 } else if (fromLanguageCode == null) {
-                    Toast.makeText(Translate.this, "Please Select Source Language", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TranslateActivity.this, "Please Select Source Language", Toast.LENGTH_SHORT).show();
                 } else if (toLanguageCode == null) {
-                    Toast.makeText(Translate.this, "Please Select The Language To Make Translation", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TranslateActivity.this, "Please Select The Language To Make Translation", Toast.LENGTH_SHORT).show();
                 } else {
                     System.out.println("hata");
                     translateText(fromLanguageCode, toLanguageCode, sourceText.getText().toString());
@@ -157,14 +156,14 @@ public class Translate extends AppCompatActivity {
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(Translate.this, "Failed to translate! try again", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TranslateActivity.this, "Failed to translate! try again", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Translate.this, "Failed to download model!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TranslateActivity.this, "Failed to download model!", Toast.LENGTH_SHORT).show();
             }
         });
     }
